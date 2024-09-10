@@ -1,0 +1,110 @@
+/* Body styling to set background and global font */
+body {
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    background-color: #eef2f5; /* Soft, light background for a pleasant feel */
+    color: #333; /* Text color for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering the main heading */
+h1 {
+    text-align: center; /* Centering the heading */
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    color: #007BFF; /* Nice bright blue for the heading */
+    margin-top: 30px; /* Space between the top of the page and heading */
+    font-weight: bold;
+    letter-spacing: 1px; /* Subtle letter-spacing for elegance */
+}
+
+/* Feed container */
+.feed {
+    width: 60%; /* Width suitable for larger screens */
+    margin: 40px auto; /* Centering the container */
+    padding: 20px;
+    background-color: #ffffff; /* Clean white background for the feed */
+    border: 1px solid #e0e0e0;
+    border-radius: 10px; /* Rounded corners for a smooth look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Individual post */
+.post {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Slightly off-white for post background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Lighter shadow for each post */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover transition */
+    text-align: left; /* Keep the content left-aligned */
+}
+
+/* Post hover effect */
+.post:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More shadow on hover */
+    background-color: #f1f1f1; /* Slight background change on hover */
+}
+
+/* Post title */
+.post h2 {
+    font-size: 1.8rem; /* Slightly larger font for title */
+    font-weight: 700; /* Bold title */
+    color: #222; /* Darker color for the title */
+    margin-bottom: 15px; /* Spacing below the title */
+    transition: color 0.3s; /* Smooth color change on hover */
+}
+
+/* Change title color on hover */
+.post h2:hover {
+    color: #FF6B6B; /* Bright coral color on hover */
+}
+
+/* Post body */
+.post p {
+    font-size: 1rem;
+    line-height: 1.6; /* Improve readability with more line height */
+    color: #555; /* Slightly lighter color for the text */
+}
+
+/* Link styling */
+.post a {
+    display: inline-block;
+    font-size: 1rem;
+    color: #007BFF; /* Blue color for the link */
+    text-decoration: none;
+    padding: 5px 0;
+    margin-top: 10px;
+    border-bottom: 2px solid transparent; /* Border for smooth hover transition */
+    transition: border-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+/* Link hover effect */
+.post a:hover {
+    border-bottom: 2px solid #FF6B6B; /* Bright coral underline on hover */
+    color: #FF6B6B; /* Change text color to coral */
+}
+
+/* Loading spinner */
+.spinner {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem; /* Slightly larger font for loading text */
+    color: #007BFF; /* Blue color to match theme */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .feed {
+        width: 90%; /* Make feed full width on smaller screens */
+    }
+
+    .post h2 {
+        font-size: 1.4rem; /* Adjust title size on mobile */
+    }
+
+    .post p {
+        font-size: 0.9rem; /* Adjust body text size on mobile */
+    }
+}
